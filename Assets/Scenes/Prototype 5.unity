@@ -726,7 +726,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1657921790}
-  - component: {fileID: 1657921789}
   - component: {fileID: 1657921788}
   m_Layer: 0
   m_Name: GameManager
@@ -752,19 +751,8 @@ MonoBehaviour:
   - {fileID: 5362794463225823112, guid: aa76d93c91e814d5cb3fa1381f10c7fb, type: 3}
   - {fileID: 5961970225709864643, guid: 6dfdd1d45307d4873b05e9b9796c93bb, type: 3}
   - {fileID: 690123189784377498, guid: d2b7f8f8320cf47b08e43f5435797501, type: 3}
+  scoreText: {fileID: 0}
   spawnRate: 1
---- !u!114 &1657921789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1657921787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 880eee48f517f4680a72dc499137e26e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1657921790
 Transform:
   m_ObjectHideFlags: 0
