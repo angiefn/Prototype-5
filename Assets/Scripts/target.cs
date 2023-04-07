@@ -17,7 +17,7 @@ public class target : MonoBehaviour
     void Start()
     {
         targetRb = GetComponent<Rigidbody>();
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
         targetRb.AddForce(Vector3.up * Random.Range(minSpeed, maxSpeed), ForceMode.Impulse);
         targetRb.AddTorque(Random.Range(-maxTorque, maxTorque), Random.Range(-maxTorque, maxTorque), Random.Range(-10, 10), ForceMode.Impulse);
@@ -34,7 +34,7 @@ public class target : MonoBehaviour
     private void OnMouseDown()
     {
         Destroy(gameObject);
-        gameManager.UpdateScore(0);
+        gameManager.UpdateScore(5);
     }
 
     private void OnTriggerEnter(Collider other)
