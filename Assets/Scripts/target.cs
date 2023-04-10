@@ -44,6 +44,7 @@ public class target : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
+        gameManager.GameOver();
     }
 
     Vector3 RandomForce()
