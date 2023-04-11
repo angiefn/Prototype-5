@@ -14,6 +14,7 @@ public class target : MonoBehaviour
 
     public ParticleSystem explostionParticle;
     public int pointValue;
+    public bool isGameActive;
 
 
     // Start is called before the first frame update
@@ -36,9 +37,13 @@ public class target : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Destroy(gameObject);
-        Instantiate(explostionParticle, transform.position, explostionParticle.transform.rotation);
-        gameManager.UpdateScore(pointValue);
+        if (gameManager.isGameActive)
+        {
+            Destroy(gameObject);
+            Instantiate(explostionParticle, transform.position, explostionParticle.transform.rotation);
+            gameManager.UpdateScore(pointValue);
+        }
+       
     }
 
     private void OnTriggerEnter(Collider other)
