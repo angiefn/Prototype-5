@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+    
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +14,7 @@ public class GameManager : MonoBehaviour
     public bool isGameActive;
     private int score;
     public float spawnRate = 1.0f;
+    public Button restartButton;
     
 
     // Start is called before the first frame update
@@ -53,6 +56,7 @@ public class GameManager : MonoBehaviour
     {
         gameOverText.gameObject.SetActive(true);
         isGameActive = false;
+        restartButton.gameObject.SetActive(true);
     }
 
     public void RestartGame()
