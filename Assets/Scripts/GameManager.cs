@@ -15,16 +15,12 @@ public class GameManager : MonoBehaviour
     private int score;
     public float spawnRate = 1.0f;
     public Button restartButton;
+    public GameObject titleScreen;
     
 
     // Start is called before the first frame update
     void Start()
     {
-
-        isGameActive = true;
-        StartCoroutine(SpawnTarget());
-        score = 0;
-        UpdateScore(0);
         
     }
 
@@ -63,4 +59,16 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    public void StartGame()
+    {
+        isGameActive = true;
+        score = 0;
+
+        StartCoroutine(SpawnTarget());
+        UpdateScore(0);
+
+        titleScreen.gameObject.SetActive(false);
+    }
+    
 }
