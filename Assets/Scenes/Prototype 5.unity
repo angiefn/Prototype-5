@@ -1041,7 +1041,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Difficult
+  m_text: 'Hard
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31706cb8c8e1e4d99bb4d0a39c952ca2, type: 2}
   m_sharedMaterial: {fileID: 21066439983934862, guid: 31706cb8c8e1e4d99bb4d0a39c952ca2, type: 2}
@@ -1259,7 +1261,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hard
+  m_text: Medium
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31706cb8c8e1e4d99bb4d0a39c952ca2, type: 2}
   m_sharedMaterial: {fileID: 21066439983934862, guid: 31706cb8c8e1e4d99bb4d0a39c952ca2, type: 2}
@@ -1350,7 +1352,7 @@ GameObject:
   - component: {fileID: 1156804697}
   - component: {fileID: 1156804696}
   m_Layer: 5
-  m_Name: Hard Button
+  m_Name: Medium Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1389,6 +1391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b580bacd671fb4fd5986f1648359759c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  difficulty: 2
 --- !u!114 &1156804697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1485,7 +1488,7 @@ GameObject:
   - component: {fileID: 1341736145}
   - component: {fileID: 1341736144}
   m_Layer: 5
-  m_Name: Difficult Button
+  m_Name: Hard Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1524,6 +1527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b580bacd671fb4fd5986f1648359759c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  difficulty: 3
 --- !u!114 &1341736145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1741,6 +1745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b580bacd671fb4fd5986f1648359759c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  difficulty: 1
 --- !u!1 &1524939001
 GameObject:
   m_ObjectHideFlags: 0

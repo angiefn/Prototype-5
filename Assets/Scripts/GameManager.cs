@@ -60,10 +60,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void StartGame()
+    public void StartGame(int diffculty)
     {
         isGameActive = true;
         score = 0;
+        spawnRate = spawnRate / diffculty;
 
         StartCoroutine(SpawnTarget());
         UpdateScore(0);
